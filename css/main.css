@@ -67,6 +67,15 @@ nav a img{
     text-decoration: none;
     color: rgb(245, 163, 109) ;
 }
+.nav-toggle{
+    color: rgb(245, 163, 109);
+    background: none;
+    border: none;
+    font-size: 3rem;
+    padding: 0 2rem;
+
+    display: none;
+}
 
 .nav-list .btn:hover{
     color: rgb(245, 163, 109) ;
@@ -254,7 +263,7 @@ footer a:hover{
 
 /* SOBRE MI PAGE */
 
-.sobremi h1{
+.titulos-pages h1{
     margin: 2rem auto;
     color: white;
     width: 75%;
@@ -298,13 +307,13 @@ h3{
 
 .servicios{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(6,1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 3rem;
     grid-template-areas: 
-    "presencial presencial online online"
-    "antropometria antropometria antropometria antropometria"
-    "taller taller planes planes";
+    "presencial presencial presencial online online online"
+    "antropometria antropometria antropometria antropometria antropometria antropometria"
+    "taller taller taller planes planes planes";
     text-align: center;
    
     text-decoration: none;
@@ -485,4 +494,110 @@ h3{
     -moz-transform: scale(1.02, 1.02);
     -ms-transform: scale(1.02, 1.02);
     -o-transform: scale(1.02, 1.02);
+}
+
+
+@media (max-width: 768px){
+    .nav-menu{
+        height: 6rem;
+    }
+
+    nav a img{
+        height: 6rem;    
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        position: fixed;
+        left: 0;
+        top: 6rem;
+        opacity: 0.9;
+        width: 100%;
+        padding: 2rem 0;
+        height: calc(100% - 6rem);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+        -webkit-transition: left 0.3s;
+        -moz-transition: left 0.3s;
+        -ms-transition: left 0.3s;
+        -o-transition: left 0.3s;
+}
+    
+    .nav-list .btn{
+        text-decoration: none;
+        color:  rgb(245, 163, 109);
+        font-weight: bolder;
+        font-size: 2rem;
+        width: max-content;
+    }
+    .nav-menu h2{
+        font-size: 2rem;
+        
+    }
+    .nav-toggle{
+        display: block;
+    
+    }
+    .nav-menu_visible{
+        left: 0;
+
+    }
+    .servicios{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 3rem;
+        grid-template-areas: 
+        "presencial  online"
+        "antropometria antropometria "
+        "taller  planes";
+        text-align: center;
+       
+        text-decoration: none;
+    }
+    .servicios a {
+        text-decoration: none;
+        font-size: 3rem;
+        color: rgb(245, 163, 109);
+        text-shadow: 1px 1px 1px black;
+        font-weight: 700;
+    }
+    
+    .servicios h4{
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 576px){
+    .servicios{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 3rem;
+        grid-template-areas: 
+        "presencial" 
+        "online"
+        "antropometria "
+        "taller"
+        "planes";
+        text-align: center;
+    
+        text-decoration: none;
+    }
+    .servicios a {
+        text-decoration: none;
+        font-size: 2rem;
+        color: rgb(245, 163, 109);
+        text-shadow: 1px 1px 1px black;
+        font-weight: 700;
+    }
+    
+    .servicios h4{
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
 }
