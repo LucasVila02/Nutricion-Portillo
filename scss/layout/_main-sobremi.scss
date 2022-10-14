@@ -1,0 +1,38 @@
+.titulos-pages {
+    h1{
+    margin: 2rem auto;
+    color: white;
+    width: 75%;
+    text-align: center;
+    font-size: 5rem;
+    border-bottom: 2px solid white;
+    }
+    h3{
+        padding: .5rem;
+        margin: 3rem 0;
+        font-weight: 700;
+        background-color:rgb(17, 16, 48)  ;
+        color: white ;
+        text-align: center;
+        font-size: 3rem;
+    }
+    .flexContent{
+        display: flex;
+        flex-direction: row;
+        margin: 2rem;
+        p {
+            width: 50%;
+            height: max-content;
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 400;
+            margin: auto;
+        }
+        img{
+            margin: auto;
+            width: 50rem;
+            height: 50rem;
+            object-fit: cover;
+        }
+    }
+}

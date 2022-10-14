@@ -1,0 +1,186 @@
+.titulos-pages h1{
+    margin: 2rem auto;
+    color: white;
+    width: 75%;
+    text-align: center;
+    font-size: 5rem;
+    border-bottom: 2px solid white;
+    }
+.servicios{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 3rem;
+    grid-template-areas: 
+    "presencial presencial presencial online online online"
+    "antropometria antropometria antropometria antropometria antropometria antropometria"
+    "taller taller taller planes planes planes";
+    text-align: center;
+   
+    text-decoration: none;
+    a {
+        text-decoration: none;
+        font-size: 4rem;
+        color: rgb(245, 163, 109);
+        text-shadow: 1px 1px 1px black;
+        font-weight: 700;
+    }
+    h4{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .presencial{
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        grid-area: presencial;
+        background-image: url(../images/presencial.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: auto;
+        width: 95%;
+        height: 20rem;
+        border-radius: 3rem;
+        -webkit-border-radius: 3rem;
+        -moz-border-radius: 3rem;
+        -ms-border-radius: 3rem;
+        -o-border-radius: 3rem;
+        box-shadow: 0.5rem 0.5rem 1rem black;
+        transition: 1s;
+        &:hover{
+            opacity: 0.9;
+            transform: scale(1.02, 1.02);
+            -webkit-transform: scale(1.02, 1.02);
+            -moz-transform: scale(1.02, 1.02);
+            -ms-transform: scale(1.02, 1.02);
+            -o-transform: scale(1.02, 1.02);        
+        }
+    }
+    .online{
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        grid-area: online;
+        background-image: url(../images/online.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 20rem;
+        width: 95%;
+        margin: 0 auto;
+        border-radius: 3rem;
+        -webkit-border-radius: 3rem;
+        -moz-border-radius: 3rem;
+        -ms-border-radius: 3rem;
+        -o-border-radius: 3rem;
+        box-shadow: 0.5rem 0.5rem 1rem black;
+        transition: 1s;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+        &:hover{
+            opacity: 0.9;
+            transform: scale(1.02, 1.02);
+            -webkit-transform: scale(1.02, 1.02);
+            -moz-transform: scale(1.02, 1.02);
+            -ms-transform: scale(1.02, 1.02);
+            -o-transform: scale(1.02, 1.02);
+        }
+    
+      
+    }
+    .antropometria{
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        grid-area: antropometria;
+         background-image: url(../images/antropometria.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 20rem;
+        width: 95%;
+        margin: 0 auto;
+        border-radius: 3rem;
+        -webkit-border-radius: 3rem;
+        -moz-border-radius: 3rem;
+        -ms-border-radius: 3rem;
+        -o-border-radius: 3rem;
+        box-shadow: 0.5rem 0.5rem 1rem black;
+        transition: 1s;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+        &:hover{
+            opacity: 0.9;
+            transform: scale(1.02, 1.02);
+            -webkit-transform: scale(1.02, 1.02);
+            -moz-transform: scale(1.02, 1.02);
+            -ms-transform: scale(1.02, 1.02);
+            -o-transform: scale(1.02, 1.02);
+        }
+    }
+    .talleres{
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        grid-area: taller;
+        background-image: url(../images/taller.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 20rem;
+        width: 95%;
+        margin: 0 auto;
+        border-radius: 3rem;
+         -webkit-border-radius: 3rem;
+        -moz-border-radius: 3rem;
+        -ms-border-radius: 3rem;
+        -o-border-radius: 3rem;
+         box-shadow: 0.5rem 0.5rem 1rem black;
+        transition: 1s;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+        &:hover{
+            opacity: 0.9;
+            transform: scale(1.02, 1.02);
+            -webkit-transform: scale(1.02, 1.02);
+            -moz-transform: scale(1.02, 1.02);
+            -ms-transform: scale(1.02, 1.02);
+            -o-transform: scale(1.02, 1.02);
+        }
+    }
+    .planes{
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        grid-area: planes;
+        background-image: url(../images/planes.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 20rem;
+        width: 95%;
+        margin: 0 auto;
+        border-radius: 3rem;
+        -webkit-border-radius: 3rem;
+        -moz-border-radius: 3rem;
+        -ms-border-radius: 3rem;
+        -o-border-radius: 3rem;
+        box-shadow: 0.5rem 0.5rem 1rem black;
+        transition: 1s;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+        &:hover{
+            opacity: 0.9;
+            transform: scale(1.02, 1.02);
+            -webkit-transform: scale(1.02, 1.02);
+            -moz-transform: scale(1.02, 1.02);
+            -ms-transform: scale(1.02, 1.02);
+            -o-transform: scale(1.02, 1.02);
+        }
+    }
+    
+}

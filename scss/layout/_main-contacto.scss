@@ -1,0 +1,84 @@
+.contactPage{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    align-items: center;
+    justify-content: center;
+    h2{
+        margin-bottom: 3rem;
+        padding-bottom: 2rem;
+        font-size: 4rem;
+        text-align: center;
+        font-weight: bolder;
+        width: 90%;
+        border-bottom: 2px solid white;
+    }
+    .flexContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .formContact{
+            padding: 3rem;
+            
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            background-color: rgb(17, 16, 48) ;
+            height: min-content ;
+            width: 60rem;
+            border-radius: 2rem;
+            text-align: center;
+            -webkit-border-radius: 2rem;
+            -moz-border-radius: 2rem;
+            -ms-border-radius: 2rem;
+            -o-border-radius: 2rem;
+
+            input{
+                text-align: center;
+                margin: auto;
+                padding: 1rem;
+                width: 75%;
+                font-size: 2rem;
+                font-weight: 700;
+                background-color: transparent;
+                color: aliceblue;
+                border: none;
+                border-bottom: 1px solid white;
+            }
+            label{
+                padding: 1rem;
+                font-weight: 700;
+            }
+            .btnSubmit:hover{
+                background: white;
+                color: rgb(17, 16, 48) ;
+                border-radius: 2rem;
+                -webkit-border-radius: 2rem;
+                -moz-border-radius: 2rem;
+                -ms-border-radius: 2rem;
+                -o-border-radius: 2rem;
+            }
+        }
+    }
+    .ubicationMap{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 3rem;
+        h3{
+            width: 60rem ;
+            font-size: 3rem;
+            text-align: center;
+            background-color:rgb(17, 16, 48) ;
+        }
+        p{
+            color: white;
+            font-weight: 700;
+            text-align: center;
+            margin: 1rem;
+        }
+    }
+}

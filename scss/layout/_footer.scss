@@ -1,0 +1,37 @@
+footer{
+    background: white;
+    color: rgb(245, 163, 109) ;
+    text-align: center;
+    margin-top: auto;
+    padding-top: 1rem;
+    .rrss{
+        margin: 1rem;
+        h2{
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        .rrss-items {
+            display: flex;
+            justify-content: center;
+            column-gap: 4rem;
+            padding: 20px 20px;
+            
+        }
+        .currentColor {
+            color: rgb(245, 163, 109);
+        }
+        a:hover{
+            transform: scale(1.4, 1.4);
+            -webkit-transform: scale(1.4, 1.4);
+            -moz-transform: scale(1.4, 1.4);
+            -ms-transform: scale(1.4, 1.4);
+            -o-transform: scale(1.4, 1.4);
+        }
+        
+    }
+    .footer-info h4{
+        font-size: 2.2rem;
+        font-weight: 700;
+        }
+}
